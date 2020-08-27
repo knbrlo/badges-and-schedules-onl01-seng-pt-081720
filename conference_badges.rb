@@ -10,6 +10,7 @@ def assign_rooms(array)
     array_assignments << "Hello, #{name}! You'll be assigned to room #{count}!"
     count += 1
   end
+  array_assignments
 end
 
 def batch_badge_creator(array)
