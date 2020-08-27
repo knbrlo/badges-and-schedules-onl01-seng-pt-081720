@@ -8,6 +8,11 @@ def batch_badge_creator(array)
   array.each do |name|
     array_messages << badge_maker(name)
   end
+
+  array_messages.each do |item|
+    printer(item)
+  end
+
   array_messages
 end
 
