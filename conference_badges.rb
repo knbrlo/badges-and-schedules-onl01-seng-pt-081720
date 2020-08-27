@@ -8,7 +8,6 @@ def batch_badge_creator(array)
   array.each do |name|
     array_messages << badge_maker(name)
   end
-
   array_messages
 end
 
@@ -17,7 +16,6 @@ def assign_rooms(array)
   array.each_with_index do |name,index|
     array_assignments << "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
-
   array_assignments
 end
 
