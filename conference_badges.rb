@@ -16,10 +16,14 @@ def assign_rooms(array)
   array.each_with_index do |name,index|
     array_assignments << "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
+
+  array_assignments.each do |item|
+    printer(item)
+  end
+
   array_assignments
 end
 
-def printer(array)
-  puts batch_badge_creator
-
+def printer(item)
+  puts item
 end
