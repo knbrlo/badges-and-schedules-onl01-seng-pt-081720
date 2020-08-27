@@ -9,9 +9,7 @@ def batch_badge_creator(array)
     array_messages << badge_maker(name)
   end
 
-  array_messages.each do |item|
-    printer(item)
-  end
+  printer(array_messages)
 
   array_messages
 end
@@ -22,13 +20,13 @@ def assign_rooms(array)
     array_assignments << "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
 
-  array_assignments.each do |item|
-    printer(item)
-  end
+  printer(array_assignments)
 
   array_assignments
 end
 
-def printer(item)
-  puts item
+def printer(array)
+  array.each do |item|
+    puts item
+  end
 end
