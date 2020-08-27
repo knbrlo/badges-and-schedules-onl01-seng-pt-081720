@@ -8,7 +8,7 @@ def batch_badge_creator(array)
   array.each do |name|
     array_messages << badge_maker(name)
   end
-  puts array_messages
+  printer(array_messages)
   array_messages
 end
 
