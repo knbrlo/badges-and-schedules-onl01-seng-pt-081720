@@ -21,6 +21,6 @@ def batch_badge_creator(array)
   array_messages
 end
 
-def printer(array)
-
+def printer()
+  puts line.chomp
 end
