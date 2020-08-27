@@ -4,10 +4,9 @@ def badge_maker(name)
 end
 
 def assign_rooms(array)
-  count = 1
   array_assignments = []
-  array.each do |name|
-    array_assignments << "Hello, #{name}! You'll be assigned to room #{count}!"
+  array.each_with_index do |name|
+    array_assignments << "Hello, #{name}! You'll be assigned to room #{index}!"
     count += 1
   end
   array_assignments
