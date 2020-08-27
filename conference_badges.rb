@@ -1,8 +1,6 @@
 # Write your code here.
 def badge_maker(name)
-  message = "Hello, my name is #{name}."
-  printer(message)
-  message
+  "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(array)
@@ -22,5 +20,6 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  puts array
+  puts batch_badge_creator
+  
 end
